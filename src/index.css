@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .color{
+    background: rgb(241,139,203);
+background: linear-gradient(90deg, rgba(241,139,203,0.09287464985994398) 18%, rgba(86,123,231,0.16010154061624648) 51%, rgba(252,252,252,1) 83%);
+}
+.footer-bg{
+    background: rgb(109,105,238);
+background: linear-gradient(90deg, rgb(109, 105, 238) 18%, rgb(205, 77, 252) 83%);
+} */
+.gradient-bg {
+  background: rgb(254, 221, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 221, 238, 1) 0%,
+    rgba(252, 246, 252, 1) 27%,
+    rgba(197, 234, 237, 1) 63%,
+    rgba(253, 221, 254, 1) 100%
+  );
+}
+
+.gradient-tooltip {
+  background: rgb(0, 118, 192);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 118, 192, 1) 0%,
+    rgba(148, 0, 211, 1) 100%
+  );
+}
+.custom-bg {
+  /* Vector 13 */
+  background-image: url("./../public/pic.jpg");
+  height: 100vh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: 10px;
+  position: relative;
+}
+.custom-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.555) 100%
+  );
+  height: 40%;
+}
+.footer-gradient {
+  background: rgb(0, 118, 206);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 118, 206, 1) 0%,
+    rgba(148, 0, 211, 1) 100%
+  );
+}
